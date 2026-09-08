@@ -1,0 +1,95 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="練完啦 · 隱私權政策 — GloCue / 练完啦"><title>練完啦 · 隱私權政策 · GloCue</title><link rel="stylesheet" href="../../assets/style.css"></head><body><a class="skip" href="#main">跳至正文</a><header><a class="brand" href="../../">GloCue · 练完啦</a><nav aria-label="Navigation"><a href="../../">首頁</a><a href="../support/">支援</a><a href="../privacy/">隱私權政策</a><a lang="zh-Hans" href="../../zh-hans/privacy/">简体中文</a><a lang="en" href="../../en/privacy/">English</a></nav></header><main id="main"><h1>隱私權政策</h1>
+<p><strong>App：</strong> GloCue（练完啦）<br />
+<strong>服務提供者：</strong> Xurui Liang（梁栩瑞）<br />
+<strong>生效日期：</strong> 2026年9月8日</p>
+<p>本政策提供簡體中文、英文及繁體中文版本，三個版本的含義應保持一致。如有不一致之處，在適用法律允許的範圍內以簡體中文版本為準。</p>
+<p>GloCue 是一款用於記錄舞蹈練習、連結練習影片、查看練習回顧的本機優先 App。「本機優先」表示 App 透過裝置上的本機副本提供互動，並不表示資料只儲存在本機。本政策說明本機副本、Apple 私有雲端服務和照片圖庫媒體如何共同運作。</p>
+<h2>1. 我們處理哪些資訊</h2>
+<p>我們不要求您註冊開發者帳號，也不營運用於接收您練習內容的自有伺服器。查看、新增、修改和刪除本機紀錄不要求您登入 Apple 帳號。iCloud 同步是選用功能；只有在您開啟同步，且裝置上經驗證的 Apple 帳號與本機資料庫綁定的帳號一致時，App 才會透過 private CloudKit 傳輸資料。App 處理的資訊包括：</p>
+<ul>
+<li>結構化資料：Profile 暱稱和圖片參照、舞蹈教室和舞卡、練習紀錄，以及相關日期、時間、價格、老師、課程類型、歌曲、備註、難度和媒體參照。</li>
+<li>媒體資訊：您明確選取的照片或影片、iCloud 照片識別參照，以及 App 自有影片、自動或手動封面和 Profile 圖片的檔案描述。</li>
+<li>裝置狀態：少量偏好設定，以及用於防止不同 Apple 帳號的本機副本混用的不透明 CloudKit 帳號綁定狀態。</li>
+</ul>
+<h2>2. 處理目的、依據和保留期限</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>資訊類別</th>
+<th>處理目的</th>
+<th>處理依據</th>
+<th>保留期限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>結構化資料</td>
+<td>提供打卡、補登、搜尋、行事曆、統計、回顧及同一 Apple 帳號的多裝置同步</td>
+<td>提供您要求的 App 功能</td>
+<td>儲存在本機 SwiftData 副本中；開啟 iCloud 同步後也儲存在您 Apple 帳號的 private CloudKit 中。符合帳號驗證與同步條件時，紀錄刪除會透過 Apple 服務最終同步，但解除安裝 App 只會刪除本機副本</td>
+</tr>
+<tr>
+<td>照片圖庫參照和 App 自有媒體</td>
+<td>連結及播放練習影片、顯示圖片和封面、跨裝置還原 App 自有媒體</td>
+<td>您主動選取媒體或明確選擇儲存獨立副本</td>
+<td>照片圖庫原始素材由 iCloud 照片管理；開啟 iCloud 同步後，App 自有影片和圖片原件以單一 CKAsset 儲存在 private CloudKit media zone。此版本不會在刪除參照或解除安裝 App 時自動刪除不可變的雲端媒體紀錄</td>
+</tr>
+<tr>
+<td>本機帳號綁定狀態和偏好設定</td>
+<td>隔離不同 Apple 帳號的本機副本並儲存 App 設定</td>
+<td>保護資料隔離並提供 App 功能</td>
+<td>儲存在本機；帳號暫時無法使用時不會刪除本機資料，確認為不同帳號時 App 會停止同步並防止跨帳號混用</td>
+</tr>
+<tr>
+<td>Apple 網路準備請求和 Apple 系統服務資料</td>
+<td>完成 Apple/iOS 網路準備、取回 iCloud 照片媒體，以及支援 App Store 和系統診斷</td>
+<td>Apple 系統服務、您的 iCloud／系統設定或必要的技術準備</td>
+<td>由 Apple 依其系統服務和您的設定處理；GloCue 不儲存該網路請求內容</td>
+</tr>
+<tr>
+<td>聯絡郵件</td>
+<td>回覆您的問題、處理支援請求</td>
+<td>您主動聯絡及必要的溝通處理</td>
+<td>依郵件服務的處理方式和合理的支援需求保留</td>
+</tr>
+</tbody>
+</table></div>
+<h2>3. 照片圖庫權限和媒體處理</h2>
+<p>App 會在需要時要求存取 Apple 照片圖庫：</p>
+<ul>
+<li>系統選擇器本身不要求完整的照片圖庫權限。讀取權限用於將您授權的媒體對應為可在同一 iCloud 照片圖庫中跨裝置解析的識別資訊。</li>
+<li>寫入權限用於在您主動選擇匯出慢速練習影片時，將產生的影片儲存到系統照片圖庫。</li>
+<li>對應成功時只儲存 Photos cloud reference，不複製來源影片。這個參照不是 App 的獨立影片備份；目標裝置仍需使用同一 iCloud 照片圖庫、具備適當權限、完成同步或下載，而且原始素材必須仍然存在。</li>
+<li>只有匯入時因照片圖庫權限被拒絕、有限權限下素材不可見或其他既定隱私界線而無法建立參照、素材無法建立雲端識別，或您在無法分類的對應失敗後明確選擇「儲存獨立副本」時，App 才會建立 App 自有影片。暫時性的對應錯誤不會觸發未經提示的複製；既有 Photos reference 不會在日後失效時自動轉換成獨立副本。</li>
+<li>如果您的照片或影片儲存在 iCloud 照片中，iOS 可能需要從 iCloud 下載原始媒體，以完成播放、縮圖產生或匯出。此程序由 Apple 系統服務處理。</li>
+</ul>
+<p>您可以隨時在 iOS 設定中修改或撤銷照片圖庫權限。撤銷權限後，部分影片連結、封面產生、匯出或播放功能可能無法使用。</p>
+<h2>4. 網路和第三方</h2>
+<p>本 App 沒有開發者帳號系統、廣告 SDK、第三方分析 SDK，或接收練習內容的開發者伺服器。開啟 iCloud 同步後，結構化資料和 App 自有媒體分別透過同一 Apple private CloudKit database 中的 metadata zone 與 media zone 同步；以照片圖庫參照連結的原始素材由 iCloud 照片處理。這些服務均與您的 Apple 帳號和 Apple 系統設定有關。</p>
+<p>網路活動包括：</p>
+<ul>
+<li>在首次使用的引導過程中，App 可能向 Apple 提供的連線測試網址傳送一次輕量請求，提前完成 Apple/iOS 本身可能需要的網路準備。該請求不是 GloCue 的功能請求，不用於上傳、同步、分析或取得 App 內容，也不包含您的練習紀錄、照片、影片或備註。</li>
+<li>Private CloudKit 用於同步及還原結構化資料與 App 自有媒體；每筆 media record 只包含一個不超過 48 MB 產品上限的 CKAsset。iCloud 照片用於解析及下載以照片圖庫參照連結的原始素材。同步依 Apple 系統的排程最終完成，App 不承諾即時完成。</li>
+<li>如果您在裝置設定中選擇與開發者分享 Apple App Analytics，Apple 可能向開發者提供彙總或診斷資訊，通常不會直接識別您的身分。我們不會透過本 App 使用自有或第三方行為追蹤。</li>
+</ul>
+<h2>5. 儲存、刪除和備份</h2>
+<p>裝置儲存結構化資料的本機 SwiftData 副本和按需下載的媒體副本。開啟 iCloud 同步後，業務中繼資料儲存在 private CloudKit metadata zone，App 自有影片、自動／手動封面及 Profile JPEG 原件以 CKAsset 儲存在獨立的 private CloudKit media zone。以照片圖庫連結的影片只儲存參照，原始影片由 iCloud 照片管理；縮圖僅作為容量受限的快取。</p>
+<p>解除安裝 App 會刪除 App 本機副本，但不會自動刪除您 Apple 帳號中的 private CloudKit 資料、media record 或系統照片圖庫原始素材。使用同一 Apple 帳號重新安裝或使用另一部裝置，並開啟同步時，App 可能在 Apple 服務完成同步和下載後還原結構化資料與 App 自有媒體。</p>
+<p>目前版本在紀錄、影片、封面或頭像參照遭刪除或替換時，不會自動刪除不可變的 CloudKit 媒體紀錄。刪除參照與刪除雲端媒體紀錄是不同的操作，因此不再被參照的紀錄可能繼續占用您的 iCloud 空間。我們不會根據單一裝置的參照掃描或寬限期，推斷雲端紀錄可安全刪除。</p>
+<p>未登入 Apple 帳號、關閉 iCloud 同步或 iCloud 暫時無法使用時，本機資料仍可見且可編輯。帳號暫時無法使用時，同步會暫停並等待恢復；確認為不同 Apple 帳號時，App 會停止同步，防止原本的本機資料庫與新帳號混用。App 不會因此自動刪除、移轉或重新綁定本機資料，也不會刪除原 Apple 帳號的雲端資料。</p>
+<h2>6. 您的選擇與本機優先的限制</h2>
+<p>您可以在 App 內查看、更正或刪除紀錄，在「資料與隱私」中開啟或關閉 iCloud 同步，匯出目前裝置上可用的本機中繼資料 JSON 報告，在 iOS 設定中撤銷照片圖庫權限，或解除安裝 App 以刪除本機資料。JSON 報告不是雲端即時快照、可匯入的備份，也不是媒體檔案封存。我們無法透過開發者伺服器遠端查看或操作您的 private CloudKit 內容；系統照片圖庫、iCloud 照片、private CloudKit、Apple App Analytics 和匯出檔案由 Apple 或您管理。</p>
+<h2>7. 安全措施</h2>
+<p>我們透過本機副本、Apple 私有資料庫、帳號身分隔離及最少必要的照片圖庫存取，降低資料暴露風險。App 不營運接收練習資料的自有伺服器，也不使用廣告或第三方行為追蹤 SDK。安全仍依賴裝置鎖定、系統更新、Apple 帳號安全和您授予的系統權限。</p>
+<h2>8. 資料分享</h2>
+<p>除了 Apple 系統服務為實現 App Store、iCloud、照片圖庫、當機診斷或系統權限所進行的處理，以及您透過電子郵件聯絡我們時，郵件服務供應商和 Outlook/Microsoft 對相關郵件資訊的處理之外，我們不會向第三方出售、出租或分享您的個人內容。若未來使用會改變資料處理方式的服務，我們會更新本政策，並在需要時重新取得您的同意。</p>
+<h2>9. 兒童隱私</h2>
+<p>本 App 並非以兒童為對象，也不鼓勵未成年人在未受監護人管理的情況下使用。未達所在地數位同意年齡的使用者，或中國大陸未滿 14 歲的使用者，應由監護人決定是否使用本 App，並管理相關資料和權限。我們不會刻意透過自有伺服器收集兒童個人資訊。如果您認為兒童在未經適當監護人同意的情況下使用本 App，或向我們傳送了個人資訊，請透過下方聯絡方式與我們聯繫。</p>
+<h2>10. 政策更新</h2>
+<p>我們可能因功能、法律或營運變更而更新本政策。重大變更會透過更新本頁面、App 內提示，或適用法律要求的其他方式通知您。</p>
+<h2>11. 聯絡我們</h2>
+<p>如對本隱私權政策或資料處理有疑問，請聯絡：</p>
+<p><a href="mailto:realrael.dev@outlook.com">realrael.dev@outlook.com</a></p>
+<p>如果您透過電子郵件聯絡我們，您的電子郵件地址、郵件內容和相關中繼資料將由您的郵件服務供應商及 Outlook/Microsoft 郵件服務處理，用於投遞、儲存和回覆郵件。</p>
+<h2>網站託管</h2>
+<p>本支援及隱私權政策網站使用 GitHub Pages 託管。造訪這些網頁時，GitHub 會基於安全目的記錄並儲存訪客的 IP 位址，無論您是否登入 GitHub。相關資訊由 GitHub 依其隱私聲明處理。此處理發生於網站造訪，不表示 GloCue 在 App 內加入行為追蹤、廣告或第三方分析。詳情請參閱 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隱私聲明</a>。</p></main><footer>© 2026 LIANG XURUI</footer></body></html>
