@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="GloCue · Privacy Policy — GloCue / 练完啦"><title>GloCue · Privacy Policy · GloCue</title><link rel="stylesheet" href="../../assets/style.css"><link rel="icon" href="../../assets/app-icon.png"></head>
+<body class="document-page"><a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><a class="brand" href="../../en/"><img src="../../assets/app-icon.png" width="44" height="44" alt=""><span>GloCue<small>练完啦</small></span></a>
+<details class="language-switcher"><summary aria-label="Choose language · English">English<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></summary><nav class="language-options" aria-label="Choose language"><a href="../../zh-hans/privacy/previous.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a>
+<a href="../../en/privacy/previous.html" lang="en" hreflang="en" aria-current="page">English</a>
+<a href="../../zh-hant/privacy/previous.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></nav></details></header>
+<main id="main" class="document-main"><nav class="page-nav" aria-label="Page navigation"><a href="../../en/">Home</a><a href="../support/">Support</a><a href="../privacy/" aria-current="page">Privacy Policy</a><a href="../terms/">Terms of Use</a></nav><article class="prose"><h1>Privacy Policy</h1>
+<p><a href="./">This is the previous public text. View the 1.0.1 revision</a></p>
+<p><strong>App:</strong> GloCue (练完啦)<br />
+<strong>Service Provider:</strong> Xurui Liang (梁栩瑞)<br />
+<strong>Effective Date:</strong> September 8, 2026</p>
+<p>This policy is provided in Simplified Chinese, English, and Traditional Chinese. All three versions are intended to be consistent. If there is any inconsistency, the Simplified Chinese version controls to the extent permitted by applicable law.</p>
+<p>GloCue is a local-first app for recording dance practice, linking practice videos, and reviewing your history. “Local-first” means the app uses an on-device replica for interaction; it does not mean that data stays only on the device. This policy explains how the local replica, Apple private cloud services, and Photos media work together.</p>
+<h2>1. Information We Handle</h2>
+<p>We do not require a developer account and do not operate our own server to receive your practice content. You do not need to sign in to an Apple Account to view, create, edit, or delete local records. iCloud Sync is optional. The app transports data through private CloudKit only when you enable sync and the verified Apple Account on the device matches the account bound to the local library. The app handles:</p>
+<ul>
+<li>Structured data: Profile name and image pointer, studios and dance cards, practice records, and related dates, times, prices, teachers, course types, songs, notes, difficulty, and media pointers.</li>
+<li>Media information: photos or videos you explicitly choose, iCloud Photos identity references, and file descriptors for app-owned videos, automatic/manual posters, and Profile images.</li>
+<li>Device state: limited preferences and opaque CloudKit account-binding state used to prevent local replicas for different Apple Accounts from being mixed.</li>
+</ul>
+<h2>2. Purposes, Legal Basis, and Retention</h2>
+<div class="table-wrap" role="region" tabindex="0" aria-label="Data processing table (scroll horizontally)"><table>
+<thead>
+<tr>
+<th>Information</th>
+<th>Purpose</th>
+<th>Basis</th>
+<th>Retention</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structured data</td>
+<td>Provide check-in, editing, search, calendar, statistics, review, and same-Apple-Account device sync</td>
+<td>Provide the app functionality you request</td>
+<td>Stored in a local SwiftData replica and, when iCloud Sync is enabled, in private CloudKit in your Apple Account. Record deletions eventually sync through Apple services when account verification and sync conditions are met; uninstalling removes only the local replica</td>
+</tr>
+<tr>
+<td>Photos references and app-owned media</td>
+<td>Link and play practice videos, display images/posters, and restore app-owned media across devices</td>
+<td>Your media selection or explicit choice to save an independent copy</td>
+<td>Original Photos media is managed by iCloud Photos; when iCloud Sync is enabled, app-owned video/image masters are stored as single CKAssets in a private CloudKit media zone, and this version does not automatically delete immutable cloud media records when a pointer is removed or the app is uninstalled</td>
+</tr>
+<tr>
+<td>Local account-binding state and preferences</td>
+<td>Isolate local replicas for different Apple Accounts and preserve app settings</td>
+<td>Protect data isolation and provide app functionality</td>
+<td>Stored locally; temporary account unavailability does not delete local data, while a confirmed different account stops sync and prevents cross-account mixing</td>
+</tr>
+<tr>
+<td>Apple network preparation request and Apple system service data</td>
+<td>Complete Apple/iOS network preparation, retrieve iCloud Photos media, and support App Store/system diagnostics</td>
+<td>Apple system services, your iCloud/system settings, or necessary technical preparation</td>
+<td>Handled by Apple according to its services and your settings; GloCue does not store the network request content</td>
+</tr>
+<tr>
+<td>Contact email</td>
+<td>Reply to questions and support requests</td>
+<td>Your contact request and necessary communication handling</td>
+<td>Retained according to email service handling and reasonable support needs</td>
+</tr>
+</tbody>
+</table></div>
+<h2>3. Photos Permission and Media Processing</h2>
+<p>The app requests access to Apple Photos when needed:</p>
+<ul>
+<li>The system picker itself does not require full Photos access. Read access lets the app map authorized media to an identity that can resolve across devices using the same iCloud Photos library.</li>
+<li>Add-only access is used when you choose to export a slowed practice video to your system photo library.</li>
+<li>When mapping succeeds, the app stores only a Photos cloud reference and does not copy the source video. That reference is not an independent video backup; the target device still needs the same iCloud Photos library, suitable permission, completed sync/download, and the continuing existence of the source asset.</li>
+<li>An app-owned video is created only when Photos access is denied, the asset is not visible under limited access, another established privacy boundary prevents a reference from being created at import, the asset cannot obtain a cloud identity, or you explicitly choose “Save Independent Copy” after an unclassified mapping failure. Transient mapping errors do not trigger silent copying. An existing Photos reference never silently converts into an independent copy later.</li>
+<li>If your photos or videos are stored in iCloud Photos, iOS may download the original media from iCloud to complete playback, thumbnail generation, or export. That process is handled by Apple system services.</li>
+</ul>
+<p>You can change or revoke Photos access at any time in iOS Settings. Some video links, poster generation, export, or playback features may stop working after permission is revoked.</p>
+<h2>4. Network and Third Parties</h2>
+<p>The app has no developer account system, advertising SDK, third-party analytics SDK, or developer server that receives practice content. When iCloud Sync is enabled, structured data and app-owned media sync through separate metadata and media zones in the same Apple private CloudKit database, while Photos-backed originals use iCloud Photos. These services are tied to your Apple Account and Apple system settings.</p>
+<p>Network activity includes:</p>
+<ul>
+<li>During first-run onboarding, the app may send one lightweight request to an Apple connectivity test URL so Apple/iOS network preparation can happen earlier. This is not a GloCue feature request, is not used to upload, sync, analyze, or fetch app content, and does not include your practice records, photos, videos, or notes.</li>
+<li>Private CloudKit synchronizes/restores structured data and app-owned media; each media record contains one CKAsset within the 48 MB product ceiling. iCloud Photos resolves and downloads Photos-backed originals. Sync converges according to Apple’s system schedule and is not guaranteed to be immediate.</li>
+<li>If you have opted in to share Apple App Analytics with developers in your device settings, Apple may provide summary or diagnostic information that usually does not directly identify you. We do not integrate our own or third-party behavioral tracking.</li>
+</ul>
+<h2>5. Storage, Deletion, and Backups</h2>
+<p>The device stores a local SwiftData replica and on-demand media copies. When iCloud Sync is enabled, business metadata is stored in a private CloudKit metadata zone, and app-owned videos, automatic/manual posters, and Profile JPEG masters are stored as CKAssets in a separate private CloudKit media zone. For Photos-backed videos, the app stores only references; original videos remain managed by iCloud Photos. Thumbnails are bounded cache entries.</p>
+<p>Uninstalling removes app-local copies, but does not automatically delete private CloudKit data, media records, or originals in Photos from your Apple Account. A reinstall or another device using the same Apple Account with sync enabled may restore structured data and app-owned media after Apple services finish syncing/downloading.</p>
+<p>In the current version, removing or replacing a record, video, poster, or Profile-image pointer does not automatically delete immutable CloudKit media records. Pointer deletion and cloud-record deletion are separate operations, so orphan records may continue using your iCloud storage. The app does not infer safe cloud deletion from a single device’s reference scan or a grace period.</p>
+<p>Local data remains visible and editable if you are not signed in to an Apple Account, turn off iCloud Sync, or iCloud becomes temporarily unavailable. Temporary account unavailability pauses sync until the account becomes available again. A confirmed different Apple Account stops sync and prevents the old local library from being mixed with the new account. The app does not automatically delete, migrate, or rebind local data, and this does not delete cloud data belonging to the prior Apple Account.</p>
+<h2>6. Your Choices and Local-First Limits</h2>
+<p>You can view, correct, or delete records in the app; turn iCloud Sync on or off in Data &amp; Privacy; export a JSON report of the local metadata currently available on the device; revoke Photos permission in iOS Settings; or uninstall to remove local data. The JSON report is not a live cloud snapshot, importable backup, or media archive. We cannot remotely view or operate your private CloudKit content from a developer server. Photos, iCloud Photos, private CloudKit, Apple App Analytics, and exported files are managed by Apple or by you.</p>
+<h2>7. Security Measures</h2>
+<p>We reduce data exposure through a local replica, Apple private databases, account-identity isolation, and minimal Photos access. The app does not operate a server that receives practice data and does not integrate advertising or third-party behavioral tracking SDKs. Security also depends on your device lock, system updates, Apple Account security, and permissions you grant.</p>
+<h2>8. Sharing</h2>
+<p>Except for Apple system services involved in App Store distribution, iCloud, Photos, crash diagnostics, or system permissions, and email provider and Outlook/Microsoft processing when you contact us by email, we do not sell, rent, or share your personal content with third parties. If we add a service that changes these practices, we will update this policy and obtain consent where required.</p>
+<h2>9. Children’s Privacy</h2>
+<p>The app is not directed to children and does not encourage minors to use it without guardian supervision. Users below the digital age of consent in their location, or users under 14 in Mainland China, should use the app only if a parent or guardian decides to allow it and manages the related data and permissions. We do not knowingly collect children’s personal information through our own server. If you believe a child has used the app or sent us personal information without appropriate guardian consent, please contact us.</p>
+<h2>10. Changes</h2>
+<p>We may update this policy because of product, legal, or operational changes. Material changes will be communicated by updating this page, in-app notice, or other methods required by applicable law.</p>
+<h2>11. Contact Us</h2>
+<p>For questions about this Privacy Policy or data handling, contact:</p>
+<p><a href="mailto:realrael.dev@outlook.com">realrael.dev@outlook.com</a></p>
+<p>If you contact us by email, your email address, message content, and related metadata will be processed by your email provider and by Outlook/Microsoft mail services to deliver, store, and respond to the message.</p>
+<h2>Website hosting</h2>
+<p>This support and privacy policy website is hosted on GitHub Pages. GitHub logs and stores visitors’ IP addresses for security purposes when they visit these pages, whether or not they are signed in to GitHub. GitHub handles this information under its privacy statement. This processing concerns website visits; it does not mean that GloCue has added behavioral tracking, advertising, or third-party analytics inside the app. For details, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p></article></main><footer class="site-footer">© 2026 LIANG XURUI</footer></body></html>
