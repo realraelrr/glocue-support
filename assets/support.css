@@ -188,3 +188,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .email-line { gap: 5px; }
 }
 @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
+
+/* Current privacy and terms pages share the brand header, with a reading layout. */
+.legal-page .document-main { width: min(calc(100% - 32px), 780px); padding-block: 36px 56px; }
+.legal-page .prose { padding: clamp(16px, 4.5vw, 40px); background: #fff; border: 1px solid var(--border); border-radius: 16px; }
+.legal-page .prose h1, .legal-page .prose h2 { color: var(--ink); }
+.legal-page .prose a { color: var(--accent); }
+.legal-page .prose h2 { border-top: 1px solid var(--divider); padding-top: 18px; margin-top: 28px; }
+.legal-page .prose .table-wrap { max-width: 100%; }
+@media (max-width: 767px) {
+  .legal-page .document-main { padding-block: 16px 32px; }
+}
